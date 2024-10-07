@@ -52,16 +52,6 @@ from litellm.types.utils import (
 )
 from litellm.utils import (
     _get_base_model_from_metadata,
-<<<<<<< HEAD
-=======
-    add_breadcrumb,
-    capture_exception,
-    opikLogger,
-    customLogger,
-    liteDebuggerClient,
-    logfireLogger,
-    lunaryLogger,
->>>>>>> f6a8d7894 (Added Opik logging and evaluation)
     print_verbose,
     prompt_token_calculator,
 )
@@ -71,13 +61,9 @@ from ..integrations.athina import AthinaLogger
 from ..integrations.berrispend import BerriSpendLogger
 from ..integrations.braintrust_logging import BraintrustLogger
 from ..integrations.clickhouse import ClickhouseLogger
-<<<<<<< HEAD
-from ..integrations.datadog.datadog import DataDogLogger
-=======
-from ..integrations.opik import OpikLogger
+from ..integrations.opik.opik import OpikLogger
 from ..integrations.custom_logger import CustomLogger
-from ..integrations.datadog import DataDogLogger
->>>>>>> f6a8d7894 (Added Opik logging and evaluation)
+from ..integrations.datadog.datadog import DataDogLogger
 from ..integrations.dynamodb import DyanmoDBLogger
 from ..integrations.galileo import GalileoObserve
 from ..integrations.gcs_bucket import GCSBucketLogger

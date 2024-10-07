@@ -192,6 +192,7 @@ logfireLogger = None
 weightsBiasesLogger = None
 customLogger = None
 langFuseLogger = None
+opikLogger = None
 openMeterLogger = None
 lagoLogger = None
 dataDogLogger = None

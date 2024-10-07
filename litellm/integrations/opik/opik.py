@@ -21,6 +21,13 @@ class OpikLogger(CustomLogger):
     """
     Opik Logger for logging events to an Opik Server
     """
+    def __init__(self):
+        try:
+            import opik
+            self.opik = opik
+        except ImportError:
+            self.opik = None
+
     def log_event(
         self,
         kwargs: Dict[str, Any],
